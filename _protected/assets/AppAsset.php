@@ -24,7 +24,9 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/main.js',
-        'js/lazyload.js'
+        'js/lazyload.js',
+        'js/firebase.js',
+        'js/firebase-message.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
