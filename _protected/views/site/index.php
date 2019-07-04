@@ -7,7 +7,7 @@ $this->title = 'Simple News App: List of News';
 <div class="site-index">
 
 <ul id="list-of-news" class="list-unstyled text-justify overflow-hidden">
-    <?php
+    <?php  
     foreach($model as $news){
         echo "<li>";
         echo "<h5>".Html::a($news['title'],['detail', 'guid'=>$news['guid']])."</h5>";
