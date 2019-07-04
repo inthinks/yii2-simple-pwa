@@ -26,9 +26,9 @@ var config = {
   messaging.onMessage(function(payload) {
       console.log('[firebase-messaging-sw.js] Received background message ', payload);
 
-      const notificationTitle = 'TITLE';
+      const notificationTitle = 'Cara Mengecek dan Mengatur Versi Browser untuk Pengguna';
       const notificationOptions = {
-          body: 'CONTENT',
+          body: 'Cara Mengecek dan Mengatur Versi Browser untuk Pengguna',
           icon: 'https://www.gstatic.com/devrel-devsite/v595dc2b5326ecd7de309fb4a71a7facdb2414a46fa087cc37cc0f175714dd5bb/web/images/lockup.svg',
       };
 
@@ -39,7 +39,7 @@ var config = {
           var notification = new Notification(notificationTitle,notificationOptions);
           notification.onclick = function(event) {
               event.preventDefault();
-              window.open(payload.data.url , '_blank');
+              window.open('https://inthink.my.id/site/detail?guid=https%3A%2F%2Fmedium.com%2Fp%2F1b3bb6e301be' , '_blank');
               notification.close();
           }
       }
