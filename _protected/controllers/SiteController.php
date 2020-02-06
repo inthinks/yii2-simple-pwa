@@ -15,7 +15,7 @@ use Exception;
 
 class SiteController extends Controller
 {
-    private $BOT_TOKEN = '1076405618:AAH2jsL8DbCKoMdjgXPY7lzacoIwoQBFGNY';
+    private $BOT_TOKEN = '';
 
     /**
      * {@inheritdoc}
